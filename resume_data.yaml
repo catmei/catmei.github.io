@@ -1,0 +1,267 @@
+header:
+  name: CATVIN HSIAO
+
+  email: b02202040@gmail.com
+  github_url: https://github.com/catmei
+  linkedin_url: https://www.linkedin.com/in/catvin-hsiao/
+
+work_experience:
+  - id: microsoft
+    company: Microsoft
+    role: Data Engineer (Contract)
+    period: "06/2024 -- 05/2025"
+    bullets:
+      - id: 1
+        title: Firmware Test Monitoring System
+        text: "Built a unified data pipeline in Power BI Dataflows using Kusto Query and Azure DevOps API across firmware test clusters, reducing manager investigation time by 80\\% via dashboards."
+      - id: 2
+        title: Config Keyword Search
+        text: "Designed a tree-traversal search over BIOS config data (mu\\_feature\\_config); integrated into Tkinter UI with match highlighting, reducing developer keyword lookup time by 80\\%."
+      - id: 3
+        title: Test Case Lineage Management System
+        text: "Engineered a Git-style test case versioning pipeline with Azure DevOps API, HTML/XML to Markdown transformation, and Azure Pipelines, improving traceability and reducing documentation time."
+
+  - id: dentsu
+    company: Dentsu
+    role: Data Engineer
+    period: "01/2024 -- 06/2024"
+    bullets:
+      - id: 1
+        title: "Marketing Analytics Pipeline for L'Oréal"
+        text: "Optimized pipelines across Google/Meta/LINE Ads and e-commerce APIs using Python and BigQuery, improving 100\\% refresh performance and data reliability while accelerating insight discovery via Power BI."
+      - id: 2
+        title: NLP-Based Keyword Categorization Tool
+        text: "Designed a multi-label classification pipeline using OpenAI embeddings, CKIP transformer segmentation, and cosine similarity, achieving a 0.7 F1 score and reducing manual categorization effort by 70\\%."
+      - id: 3
+        title: Google Analytics for Nan Shan Life
+        text: "Aligned with client on custom GTM events; implemented end-to-end behavior tracking so the client could self-serve insights and validate conversions in Google Analytics."
+
+  - id: micro_data_strategy
+    company: Micro Data Strategy
+    role: Data Analyst
+    period: "11/2022 -- 06/2023"
+    bullets:
+      - id: 1
+        title: Strategy-Level Crypto Analytics API
+        text: "Aggregated DEX/CEX/blockchain data with Pandas/NumPy and exposed strategy endpoints via Flask APIs, tripling the speed of client strategy and reporting workflows."
+      - id: 2
+        title: Arbitrage Strategy Backtesting Report
+        text: "Designed and visualized arbitrage backtests between centralized and decentralized exchanges using NumPy and Plotly, securing demo requests from institutional clients."
+
+  - id: teahouse
+    company: Teahouse Finance
+    role: Financial Engineer
+    period: "11/2021 -- 10/2022"
+    bullets:
+      - id: 1
+        title: Delta-Neutral Liquidity Strategy on Perpetual v2
+        text: "Engineered a 24/7 Python-based live trading system with smart contract APIs and real-time Slack alerts for a convex optimization-based strategy, launching Teahouse's first financial product and reaching \\$1M AUM within 3 months."
+      - id: 2
+        title: Liquidity Provision Strategy on Uniswap V3
+        text: "Integrated an R-based Gaussian Process strategy with a Python backtesting framework in partnership with a Michigan State University professor."
+
+projects:
+  - id: redrugai
+    name: ReDrugAI
+    url: https://www.kaggle.com/competitions/bigquery-ai-hackathon/writeups/redrugai0421
+    github_url: https://github.com/catmei/ReDrugAI
+    period: "09/2025"
+    subtitle: "Repurposing existing drugs as new treatments"
+    tech_stack:
+      - BigQuery
+      - Bigframes
+      - Word Embeddings
+      - Vector indexes
+      - Semantic Search
+    award: "2nd Place (\\$9,000) -- Kaggle $\\times$ Google BigQuery AI Hackathon"
+    bullets:
+      - id: 1
+        title: Vector Search via Bigframes
+        text: "Built embedding and similarity tables from Open Targets Platform and created vector indexes to accelerate large-scale cosine similarity search."
+      - id: 2
+        title: "Recommendation \\& Evaluation"
+        text: "Implemented MoA- and target-aware drug ranking with $1\\times$/$2\\times$/$5\\times$ multipliers, achieving 45.44\\% combined recall under leave-one-out validation."
+
+  - id: lunar_lander
+    name: Lunar Lander
+    url: https://github.com/catmei/RL-Projects/tree/main/project_2
+    period: "10/2025"
+    subtitle: "Reinforcement learning agent for continuous control using DDPG"
+    tech_stack:
+      - PyTorch
+      - DDPG
+      - Actor-critic
+      - Experience replay
+      - Soft target updates
+      - Matplotlib
+    award: null
+    bullets:
+      - id: 1
+        title: Baseline Model
+        text: "Built an Actor-Critic Deep Deterministic Policy Gradient (DDPG) model in PyTorch with experience replay and soft target updates, achieving a baseline 83\\% success rate over 100 evaluation episodes."
+      - id: 2
+        title: Hyperparameter Search
+        text: "Conducted systematic search over discount factor $\\gamma$, exploration noise $\\sigma$, and network capacity; improved success rate from 83\\% to 93\\%, visualized with Matplotlib."
+
+  - id: snaplingo
+    name: SnapLingo
+    url: https://github.com/catmei/snaplingo-backend
+    github_frontend_url: https://github.com/catmei/snaplingo-frontend
+    period: "05/2025"
+    subtitle: "English writing tutor built as an agentic AI"
+    tech_stack:
+      - LangGraph
+      - FastAPI
+      - Next.js
+      - Gemini 2.5 Pro
+      - MongoDB
+      - Human-in-the-loop
+    award: null
+    bullets:
+      - id: 1
+        title: LangGraph Agent
+        text: "Orchestrated a multi-step workflow: topic analysis $\\to$ writing-template generation (by essay format) $\\to$ human-in-the-loop idea injection $\\to$ interactive revision via sub-questions $\\to$ personalized study guide from stateful student--agent dialogue."
+      - id: 2
+        title: Full-Stack Architecture
+        text: "Built with FastAPI backend and Next.js frontend, Gemini 2.5 Pro for LLM and Grammarly-style revision, and MongoDB for essays and session state."
+
+  - id: classmind
+    name: ClassMind
+    url: https://github.com/catmei/Classmind
+    period: "03/2026"
+    subtitle: "AI teaching assistant for Grade 7 Math, integrated into Slack"
+    tech_stack:
+      - Agentic RAG
+      - Elasticsearch
+      - "ES|QL"
+      - Kibana Agent Builder
+      - Slack Bot
+      - Google Docs MCP
+    award: null
+    bullets:
+      - id: 1
+        title: Agentic RAG on Elasticsearch
+        text: "Designed five interconnected Elasticsearch indices (students, questions, attempts, materials, curriculum) with semantic\\_text fields; built custom ES|QL tools for exam analysis and skill breakdowns, enabling natural-language queries via Kibana Agent Builder."
+      - id: 2
+        title: Slack Bot Integration
+        text: "Developed a Python Slack bot using Socket Mode to bridge user messages to Elastic Agent Builder API, with role-based permission gating and Google Docs export via MCP server for practice sheets and reports."
+
+  - id: carenav
+    name: CareNav
+    url: https://github.com/catmei/CareNav
+    period: "03/2026"
+    subtitle: "Voice-powered AI hospital navigator with real-time triage"
+    tech_stack:
+      - ElevenLabs Agent
+      - WebSocket
+      - Firecrawl API
+      - Google Maps API
+      - Multi-threading
+    award: null
+    bullets:
+      - id: 1
+        title: Voice-Driven Triage
+        text: "Integrated ElevenLabs Conversational AI via WebSocket for hands-free symptom assessment, guiding users through location detection, symptom triage, and hospital recommendation in a single voice session."
+      - id: 2
+        title: Parallel Web Intelligence
+        text: "Designed a two-layer search pipeline using Firecrawl API with up to 15 concurrent queries to evaluate symptom--specialty alignment, insurance compatibility, and patient reviews across Google Places results within 10 km."
+
+  - id: basebro_ai
+    name: BaseBro AI
+    url: https://github.com/catmei/Commentator_AI
+    period: "03/2026"
+    subtitle: "AI-powered real-time baseball voice commentary with 3D avatar"
+    tech_stack:
+      - Google ADK
+      - Gemini Live 2.5
+      - WebSocket
+      - Three.js
+      - Tesseract OCR
+      - OpenCV
+    award: null
+    bullets:
+      - id: 1
+        title: Multimodal Streaming Agent
+        text: "Built a Google ADK agent with Gemini Live 2.5 Flash via bidirectional WebSocket, processing 1 FPS screen captures and 16 kHz user audio to produce real-time 24 kHz play-by-play commentary with seamless Q\\&A interruption."
+      - id: 2
+        title: Vision Pipeline \\& Chrome Extension
+        text: "Developed a Chrome extension capturing live game frames; applied Tesseract OCR with OpenCV preprocessing to extract scoreboard state (scores, inning, count, base runners) and enrich commentary with MLB Stats API player lookups."
+
+  - id: poker_nerd
+    name: Poker Nerd
+    url: https://github.com/catmei/PokerNerd
+    period: "10/2023"
+    subtitle: "Real-time poker video analytics platform"
+    tech_stack:
+      - OpenCV
+      - Monte Carlo
+      - Flask
+      - Socket.IO
+      - JavaScript
+      - SQLAlchemy
+      - AWS EC2
+      - RDS MySQL
+      - Plotly
+    award: null
+    bullets:
+      - id: 1
+        title: Real-Time Analysis
+        text: "Implemented OpenCV-based video recognition for PokerStars with Monte Carlo hand-equity simulation; Socket.IO between Flask and UI with multi-threading to mitigate I/O latency during DB interactions."
+      - id: 2
+        title: Full-Stack Website
+        text: "Flask app with JavaScript frontend, SQLAlchemy with connection pooling on EC2 and RDS MySQL, unit and integration tests for recognition stability, and Plotly for post-game visualization."
+
+skills:
+  - category: "Languages \\& Databases"
+    tech_stack:
+      - Python
+      - SQL
+      - JavaScript
+      - "C#"
+      - R
+      - MySQL
+      - MongoDB
+      - Redis
+      - Elasticsearch
+  - category: "Data Pipeline \\& Streaming"
+    tech_stack:
+      - Apache Airflow
+      - Spark
+      - Kafka
+  - category: "Cloud Platforms"
+    tech_stack:
+      - "AWS (RDS, S3, EC2)"
+      - "Azure (ADX, Blob Storage, DevOps, Pipelines)"
+      - "GCP (BigQuery, Cloud Functions, Vertex AI)"
+  - category: "Machine Learning \\& Data Tools"
+    tech_stack:
+      - PyTorch
+      - Scikit-learn
+      - OpenCV
+      - Pandas
+      - NumPy
+      - Matplotlib
+  - category: "Data Analysis \\& BI"
+    tech_stack:
+      - Power BI
+      - Google Analytics
+      - Looker Studio
+      - Plotly
+  - category: "Backend \\& DevOps"
+    tech_stack:
+      - FastAPI
+      - Flask
+      - LangGraph
+      - Google ADK
+      - Docker
+      - Git
+
+education:
+  - institution: Georgia Institute of Technology
+    location: Atlanta, Georgia
+    degree: Master of Science in Computer Science (OMSCS)
+    period: "08/2025 -- Present"
+  - institution: National Taiwan University
+    location: Taipei, Taiwan
+    degree: Bachelor of Science in Physics
+    period: "09/2013 -- 06/2017"
