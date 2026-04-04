@@ -339,9 +339,14 @@
 		return;
 	}
 
-	fetch('data/resume_data.yaml')
+	var dataUrl =
+		document.currentScript && document.currentScript.src
+			? new URL('resume_data.yaml', new URL('./', document.currentScript.src).href).href
+			: 'resume_data.yaml';
+
+	fetch(dataUrl)
 		.then(function (res) {
-			if (!res.ok) throw new Error('Failed to load data/resume_data.yaml: ' + res.status);
+			if (!res.ok) throw new Error('Failed to load resume data: ' + res.status);
 			return res.text();
 		})
 		.then(function (text) {
