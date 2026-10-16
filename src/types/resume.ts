@@ -22,6 +22,7 @@ export interface Project {
   subtitle: string
   tech_stack: string[]
   award?: string | null
+  award_url?: string
   bullets: Bullet[]
 }
 

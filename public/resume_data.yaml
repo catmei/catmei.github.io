@@ -1,6 +1,7 @@
 header:
   name: CATVIN HSIAO
   email: b02202040@gmail.com
+  portfolio_url: https://catmei.github.io/
   github_url: https://github.com/catmei
   linkedin_url: https://www.linkedin.com/in/catvin-hsiao/
 
@@ -54,16 +55,39 @@ work_experience:
     bullets:
       - id: 1
         title: Delta-Neutral Liquidity Strategy on Perpetual v2
-        text: "Engineered a 24/7 Python-based live trading system with smart contract APIs and real-time Slack alerts for a convex optimization-based strategy, launching Teahouse's first financial product and reaching \\$1M AUM within 3 months."
+        text: "Engineered a 24/7 Python live trading system with smart contract APIs and real-time Slack alerts for a convex optimization strategy, launching Teahouse's first product and reaching \\$1M AUM in 3 months."
       - id: 2
         title: Liquidity Provision Strategy on Uniswap V3
         text: "Integrated an R-based Gaussian Process strategy with a Python backtesting framework in partnership with a Michigan State University professor."
 
 projects:
+  - id: premortem
+    name: PreMortem
+    url: https://github.com/catmei/PreMortem
+    period: "09/2026"
+    subtitle: "Red-teaming data pipelines"
+    tech_stack:
+      - Apache Airflow 3
+      - Pydantic AI
+      - Claude
+      - FastAPI
+      - PostgreSQL
+      - Celery
+      - OpenTelemetry
+      - Docker
+    award: "Agentic Pipeline Winner -- Astronomer Hackathon, judged by Apache Airflow PMC"
+    award_url: https://www.astronomer.io/blog/beyond-the-dag-hackathon-meet-the-winners/
+    bullets:
+      - id: 1
+        title: Agentic Fault Injection
+        text: "Built an Airflow 3 plugin that infers each output's semantic model (grain, measures, lineage) and uses an LLM agent (@task.agent) to propose faults from a 13-type catalog for human-in-the-loop approval before sandboxed runs."
+      - id: 2
+        title: Silent Failure Detection
+        text: "Successfully caught silent data-quality failures (schema drift, non-idempotent loads) missed by green Airflow runs, via deterministic data-contract checks against clean-run baselines and severity-weighted readiness scoring."
+
   - id: redrugai
     name: ReDrugAI
-    url: https://www.kaggle.com/competitions/bigquery-ai-hackathon/writeups/redrugai0421
-    github_url: https://github.com/catmei/ReDrugAI
+    url: https://github.com/catmei/ReDrugAI
     period: "09/2025"
     subtitle: "Repurposing existing drugs as new treatments"
     tech_stack:
@@ -73,6 +97,7 @@ projects:
       - Vector indexes
       - Semantic Search
     award: "2nd Place (\\$9,000) -- Kaggle $\\times$ Google BigQuery AI Hackathon"
+    award_url: https://www.kaggle.com/competitions/bigquery-ai-hackathon/writeups/redrugai0421
     bullets:
       - id: 1
         title: Vector Search via Bigframes
@@ -183,7 +208,7 @@ projects:
         title: Multimodal Streaming Agent
         text: "Built a Google ADK agent with Gemini Live 2.5 Flash via bidirectional WebSocket, processing 1 FPS screen captures and 16 kHz user audio to produce real-time 24 kHz play-by-play commentary with seamless Q\\&A interruption."
       - id: 2
-        title: Vision Pipeline \\& Chrome Extension
+        title: "Vision Pipeline \\& Chrome Extension"
         text: "Developed a Chrome extension capturing live game frames; applied Tesseract OCR with OpenCV preprocessing to extract scoreboard state (scores, inning, count, base runners) and enrich commentary with MLB Stats API player lookups."
 
   - id: poker_nerd
@@ -216,10 +241,11 @@ skills:
       - Python
       - SQL
       - JavaScript
-      - "C#"
+      - "C\\#"
       - R
       - MySQL
       - MongoDB
+      - PostgreSQL
       - Redis
       - Elasticsearch
   - category: "Data Pipeline \\& Streaming"
@@ -227,10 +253,11 @@ skills:
       - Apache Airflow
       - Spark
       - Kafka
+      - Celery
   - category: "Cloud Platforms"
     tech_stack:
       - "AWS (RDS, S3, EC2)"
-      - "Azure (ADX, Blob Storage, DevOps, Pipelines)"
+      - "Azure (Fabric, ADX, Blob Storage, DevOps, Pipelines)"
       - "GCP (BigQuery, Cloud Functions, Vertex AI)"
   - category: "Machine Learning \\& Data Tools"
     tech_stack:
@@ -251,9 +278,18 @@ skills:
       - FastAPI
       - Flask
       - LangGraph
+      - Pydantic AI
       - Google ADK
       - Docker
       - Git
+
+certifications:
+  - id: airflow3_fundamentals
+    name: Astronomer Certification for Apache Airflow 3 Fundamentals
+    issuer: Astronomer
+    skill: Apache Airflow
+    period: "10/2026"
+    url: https://www.credly.com/badges/ff5ee76b-3a79-4b88-8ac8-f8027e5ad153/public_url
 
 education:
   - institution: Georgia Institute of Technology

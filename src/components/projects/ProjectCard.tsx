@@ -20,12 +20,12 @@ function ProjectLinks({ project, accent }: { project: Project; accent: Accent })
       </div>
     )
   }
-  if (project.github_url && project.url && project.url !== project.github_url) {
-    const secondLabel = project.url.includes('kaggle.com') ? 'Kaggle' : 'Link'
+  if (project.award_url && project.url && project.award_url !== project.url) {
+    const secondLabel = project.award_url.includes('kaggle.com') ? 'Kaggle' : 'Link'
     return (
       <div className="flex gap-2 w-full">
-        <LinkButton href={project.github_url} label="GitHub" accent={accent} flex />
-        <LinkButton href={project.url} label={secondLabel} accent={accent} flex />
+        <LinkButton href={project.url} label="GitHub" accent={accent} flex />
+        <LinkButton href={project.award_url} label={secondLabel} accent={accent} flex />
       </div>
     )
   }
