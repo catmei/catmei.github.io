@@ -53,11 +53,17 @@ export function ProjectCard({ project, accent, isLast = false, onDetails }: Proj
     >
       {/* Image */}
       <div className="relative aspect-video overflow-hidden">
-        <img
-          src={img}
-          alt={project.name}
-          className="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-500"
-        />
+        {img ? (
+          <img
+            src={img}
+            alt={project.name}
+            className="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-500"
+          />
+        ) : (
+          <div className="w-full h-full grid-bg bg-surface-container-lowest flex items-center justify-center">
+            <span className="font-mono text-xs text-neutral-600 tracking-[0.5em] uppercase">{displayName}</span>
+          </div>
+        )}
         <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-60" />
       </div>
 
@@ -84,6 +90,12 @@ export function ProjectCard({ project, accent, isLast = false, onDetails }: Proj
         <p className="text-sm text-on-surface-variant font-body mb-4 line-clamp-2">
           {formatPlainLine(project.subtitle)}
         </p>
+
+        {project.award && (
+          <p className="font-mono text-[10px] text-tertiary tracking-wide mb-4">
+            ★ {formatPlainLine(project.award).replace(' -- ', ' — ')}
+          </p>
+        )}
 
         <div className="flex flex-wrap gap-1.5 mb-4">
           {project.tech_stack.map(tech => (

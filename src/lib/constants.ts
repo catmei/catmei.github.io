@@ -1,6 +1,7 @@
 import type { Accent } from '@/types/resume'
 
 export const PROJECT_ORDER = [
+  'premortem',
   'basebro_ai',
   'carenav',
   'classmind',
@@ -11,6 +12,7 @@ export const PROJECT_ORDER = [
 ]
 
 export const PROJECT_ACCENTS: Record<string, Accent> = {
+  premortem: 'secondary',
   basebro_ai: 'primary',
   carenav: 'secondary',
   classmind: 'tertiary',
@@ -31,6 +33,7 @@ export const PROJECT_IMAGES: Record<string, string> = {
 }
 
 export const PROJECT_DISPLAY_NAMES: Record<string, string> = {
+  premortem: 'PREMORTEM',
   basebro_ai: 'BASEBRO_AI',
   carenav: 'CARENAV',
   classmind: 'CLASSMIND',

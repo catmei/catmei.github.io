@@ -29,7 +29,7 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
             key={project.id}
             project={project}
             accent={PROJECT_ACCENTS[project.id] ?? 'primary'}
-            isLast={i === ordered.length - 1}
+            isLast={i === ordered.length - 1 && ordered.length % 2 === 1}
             onDetails={() => setActiveProject(project)}
           />
         ))}

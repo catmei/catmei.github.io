@@ -5,6 +5,7 @@ const NAV_LINKS = [
   { href: '#work_experience', label: 'WORK_EXPERIENCE', section: 'work_experience' },
   { href: '#education', label: 'EDUCATION', section: 'education' },
   { href: '#skills', label: 'SKILLS', section: 'skills' },
+  { href: '#certifications', label: 'CERTIFICATIONS', section: 'certifications' },
 ]
 
 const SECTION_IDS = NAV_LINKS.map(l => l.section)

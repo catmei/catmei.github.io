@@ -38,6 +38,15 @@ export interface Education {
   period: string
 }
 
+export interface Certification {
+  id: string
+  name: string
+  issuer: string
+  skill: string
+  period: string
+  url?: string
+}
+
 export interface Header {
   name: string
   email: string
@@ -50,6 +59,7 @@ export interface ResumeData {
   work_experience: WorkExperience[]
   projects: Project[]
   skills: SkillCategory[]
+  certifications?: Certification[]
   education: Education[]
 }
 

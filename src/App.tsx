@@ -7,6 +7,7 @@ import { ProjectsSection } from '@/components/sections/ProjectsSection'
 import { WorkExperienceSection } from '@/components/sections/WorkExperienceSection'
 import { EducationSection } from '@/components/sections/EducationSection'
 import { SkillsSection } from '@/components/sections/SkillsSection'
+import { CertificationsSection } from '@/components/sections/CertificationsSection'
 
 export default function App() {
   const data = useResumeData()
@@ -23,6 +24,7 @@ export default function App() {
             <WorkExperienceSection jobs={data.work_experience} />
             <EducationSection education={data.education} />
             <SkillsSection skills={data.skills} />
+            <CertificationsSection certifications={data.certifications ?? []} />
           </>
         )}
       </main>

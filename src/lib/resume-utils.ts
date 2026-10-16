@@ -28,7 +28,9 @@ export function normalizeForWeb(s: string): string {
 
 export function formatPlainLine(raw: string | null | undefined): string {
   if (raw == null || raw === '') return ''
-  return normalizeForWeb(decodeResumeText(raw))
+  // Shield escaped dollars so they aren't mistaken for $math$ delimiters
+  const shielded = String(raw).replace(/\\\$/g, '\u0000')
+  return normalizeForWeb(decodeResumeText(shielded)).replace(/\u0000/g, '$')
 }
 
 const MONTH_ABBREVS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
