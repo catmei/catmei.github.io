@@ -23,6 +23,7 @@ export const PROJECT_ACCENTS: Record<string, Accent> = {
 }
 
 export const PROJECT_IMAGES: Record<string, string> = {
+  premortem: '/images/premortem.png',
   basebro_ai: '/images/basebro.png',
   carenav: '/images/carenav.png',
   classmind: '/images/classmind.png',
