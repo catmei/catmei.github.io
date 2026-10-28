@@ -12,8 +12,8 @@ work_experience:
     period: "06/2024 -- 05/2025"
     bullets:
       - id: 1
-        title: Firmware Test Monitoring System
-        text: "Built a unified data pipeline in Power BI Dataflows using Kusto Query and Azure DevOps API across firmware test clusters, reducing manager investigation time by 80\\% via dashboards."
+        title: Firmware Test Monitoring Pipeline
+        text: "Built a medallion-architecture ELT pipeline in Microsoft Fabric (Lakehouse bronze $\\to$ Dataflow Gen2 $\\to$ ADLS Gen2 silver/gold, star schema) ingesting Azure Data Explorer (KQL) and Azure DevOps data, with data quality checks, freshness SLA, retries and Teams alerts; Power BI dashboards cut manager investigation time by 80\\%."
       - id: 2
         title: Config Keyword Search
         text: "Designed a tree-traversal search over BIOS config data (mu\\_feature\\_config); integrated into Tkinter UI with match highlighting, reducing developer keyword lookup time by 80\\%."
@@ -28,7 +28,7 @@ work_experience:
     bullets:
       - id: 1
         title: "Marketing Analytics Pipeline for L'Oréal"
-        text: "Optimized pipelines across Google/Meta/LINE Ads and e-commerce APIs using Python and BigQuery, improving 100\\% refresh performance and data reliability while accelerating insight discovery via Power BI."
+        text: "Optimized an ELT pipeline ingesting Google/Meta/LINE Ads and e-commerce APIs via Python into BigQuery bronze and star-schema gold layers for Power BI, with completeness checks, business-rule validation, SLA monitoring and API retries; cut refresh time from 1.5 hours to 30 mins with partitioning and incremental refresh."
       - id: 2
         title: NLP-Based Keyword Categorization Tool
         text: "Designed a multi-label classification pipeline using OpenAI embeddings, CKIP transformer segmentation, and cosine similarity, achieving a 0.7 F1 score and reducing manual categorization effort by 70\\%."
@@ -240,6 +240,7 @@ skills:
     tech_stack:
       - Python
       - SQL
+      - KQL
       - JavaScript
       - "C\\#"
       - R
@@ -248,16 +249,21 @@ skills:
       - PostgreSQL
       - Redis
       - Elasticsearch
-  - category: "Data Pipeline \\& Streaming"
+  - category: "Data Engineering \\& Pipelines"
     tech_stack:
       - Apache Airflow
+      - ETL/ELT
+      - "Microsoft Fabric (Data Factory pipelines, Lakehouse, Dataflow Gen2)"
+      - Medallion architecture
+      - Dimensional modeling (star schema)
+      - "Data quality \\& SLA monitoring"
       - Spark
       - Kafka
       - Celery
   - category: "Cloud Platforms"
     tech_stack:
+      - "Azure (Fabric, ADLS Gen2, ADX/KQL, DevOps, Pipelines)"
       - "AWS (RDS, S3, EC2)"
-      - "Azure (Fabric, ADX, Blob Storage, DevOps, Pipelines)"
       - "GCP (BigQuery, Cloud Functions, Vertex AI)"
   - category: "Machine Learning \\& Data Tools"
     tech_stack:
@@ -269,7 +275,7 @@ skills:
       - Matplotlib
   - category: "Data Analysis \\& BI"
     tech_stack:
-      - Power BI
+      - "Power BI (Power Query, DAX)"
       - Google Analytics
       - Looker Studio
       - Plotly
